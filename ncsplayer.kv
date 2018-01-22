@@ -1,0 +1,38 @@
+<NCSPlayer>:
+	BoxLayout:
+		orientation: 'vertical'
+		size_hint_x: 0.7
+		NVPlayer:
+			id: player
+		Label:
+			id: details
+			text: 'details'
+	BoxLayout:
+		size_hint_x: 0.3
+		orientation: 'vertical'
+		ScrollView:
+			GridLayout:
+				height: self.minimum_height
+				size_hint_y: None
+				row_default_height: 100
+				spacing: 0,0
+				padding: 0,0
+				cols: 1
+				id: vid_list
+				Button:
+					id: loading
+					text: 'loading...'
+
+<VideoDetails>:
+	Label:
+		text: root.title
+
+<NVPlayer>:
+	orientation: 'vertical'
+	Label:
+		size_hint_y: None
+		size_y: 50
+		text: root.playing
+	VideoPlayer:
+		id: vplayer
+

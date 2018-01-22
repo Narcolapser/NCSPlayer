@@ -1,0 +1,16 @@
+def getVideos():
+	return ["https://www.youtube.com/watch?v=kLkhKjR9_A8",
+			"https://www.youtube.com/watch?v=fr66DyWrG7U",
+			"https://www.youtube.com/watch?v=V-mP3VU0DCg",
+			"https://www.youtube.com/watch?v=g04nYW6Y7wE",
+			"https://www.youtube.com/watch?v=_RdMzr-xdmA",
+			"https://www.youtube.com/watch?v=jrnUNG9vgZM",
+			"https://www.youtube.com/watch?v=--76GiSUEyQ",
+			"https://www.youtube.com/watch?v=WtaKxxZGCKc",
+			"https://www.youtube.com/watch?v=KmwpogFtb4Q",
+			"https://www.youtube.com/watch?v=Nn2aXfUkJsc",
+			"https://www.youtube.com/watch?v=KPdPJr20loE",
+			"https://www.youtube.com/watch?v=S19UcWdOA-I",
+			"https://www.youtube.com/watch?v=czUB6bVwwDg",
+			"https://www.youtube.com/watch?v=kz1ADo_p1SY",
+			"https://www.youtube.com/watch?v=yHLtE1wFeRQ"]
