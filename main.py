@@ -1,4 +1,3 @@
-from kivy.uix.widget import Widget
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.relativelayout import RelativeLayout
 from kivy.uix.behaviors import ButtonBehavior
@@ -33,7 +32,7 @@ class VideoDetails (ButtonBehavior,BoxLayout):
 			self.title = info['title']
 			self.thumbnail = info['thumbnail']
 			self.info = info
-			self.description = info['description']
+			self.description = info['description'].encode('ascii', 'ignore')
 	
 	def getFormats(self,formats):
 		for form in formats:
@@ -79,7 +78,7 @@ class NCSPlayer (BoxLayout):
 		self.ids.player.playing = vid.title
 		self.ids.player.ids.vplayer.source = vid.formats[0]['url']
 		print(vid.description)
-		self.ids.details.text = "LOOLS!" + vid.description[:200]
+		self.ids.details.text = vid.description
 		
 		
 
